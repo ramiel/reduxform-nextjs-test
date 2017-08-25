@@ -101,6 +101,17 @@ class UserForm extends React.Component {
           Save
         </Button>
       </FormItem>
+
+      <FormItem>
+        <Button
+          onClick={() => {
+            this.props.formReset('user');
+          }}
+        >
+          Reset
+        </Button>
+
+      </FormItem>
     </ReduxForm>);
   }
 
